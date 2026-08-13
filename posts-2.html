@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · sf-t3-1779642675702-261</title>
+  <meta name="description" content="sf-t3-1779642675702-261에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-261.maphoshirts.today/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background: #0a0a0a;
+ color: #f5e6d3;
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ position: relative;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+ padding: 80px 24px;
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 4px;
+ background: linear-gradient(90deg, #d4af37, #f5e6d3, #d4af37);
+ }
+ .hero-content {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ .hero-content h1 {
+ font-size: 3.5rem;
+ font-weight: 300;
+ letter-spacing: 4px;
+ margin-bottom: 24px;
+ color: #d4af37;
+ text-shadow: 0 2px 20px rgba(212, 175, 55, 0.3);
+ }
+ .hero-content p {
+ font-size: 1.2rem;
+ color: #c4b5a0;
+ margin-bottom: 32px;
+ line-height: 2;
+ }
+ .hero-content a {
+ display: inline-block;
+ padding: 16px 48px;
+ border: 1px solid #d4af37;
+ color: #d4af37;
+ text-decoration: none;
+ letter-spacing: 3px;
+ font-size: 0.9rem;
+ transition: all 0.4s ease;
+ background: transparent;
+ }
+ .hero-content a:hover {
+ background: #d4af37;
+ color: #0a0a0a;
+ }
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+ background: rgba(10, 10, 10, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+ }
+ .nav-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 16px 24px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .nav-links {
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+ .nav-links a {
+ color: #c4b5a0;
+ text-decoration: none;
+ font-size: 0.85rem;
+ letter-spacing: 2px;
+ transition: color 0.3s ease;
+ padding: 8px 0;
+ border-bottom: 1px solid transparent;
+ }
+ .nav-links a:hover {
+ color: #d4af37;
+ border-bottom-color: #d4af37;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 6px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background: #d4af37;
+ transition: all 0.3s ease;
+ }
+ .mobile-menu {
+ display: none;
+ position: fixed;
+ top: 70px;
+ left: 0;
+ right: 0;
+ background: rgba(10, 10, 10, 0.98);
+ backdrop-filter: blur(20px);
+ padding: 32px 24px;
+ flex-direction: column;
+ gap: 24px;
+ border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+ }
+ .mobile-menu a {
+ color: #c4b5a0;
+ text-decoration: none;
+ font-size: 1.1rem;
+ letter-spacing: 2px;
+ padding: 12px 0;
+ border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+ }
+ .mobile-menu a:hover {
+ color: #d4af37;
+ }
+ .mobile-menu.active {
+ display: flex;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hero-content h1 {
+ font-size: 2.2rem;
+ letter-spacing: 2px;
+ }
+ .hero-content p {
+ font-size: 1rem;
+ }
+ .container {
+ padding: 0 16px;
+ }
+ }
+ section {
+ padding: 100px 0;
+ }
+ .section-title {
+ font-size: 2.5rem;
+ font-weight: 300;
+ letter-spacing: 3px;
+ margin-bottom: 60px;
+ text-align: center;
+ color: #d4af37;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+ margin-bottom: 80px;
+ }
+ @media (max-width: 768px) {
+ .info-grid {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ }
+ .info-card {
+ background: linear-gradient(145deg, #121212, #1a1a1a);
+ border: 1px solid rgba(212, 175, 55, 0.15);
+ padding: 48px 40px;
+ transition: all 0.4s ease;
+ }
+ .info-card:hover {
+ border-color: #d4af37;
+ transform: translateY(-4px);
+ box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+ }
+ .info-card h3 {
+ font-size: 1.6rem;
+ font-weight: 300;
+ letter-spacing: 2px;
+ margin-bottom: 24px;
+ color: #d4af37;
+ }
+ .info-card p {
+ color: #c4b5a0;
+ font-size: 1rem;
+ line-height: 2;
+ margin-bottom: 16px;
+ }
+ .info-card .highlight {
+ color: #d4af37;
+ font-weight: 500;
+ }
+ .faq-section {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+ padding: 32px 0;
+ }
+ .faq-item h4 {
+ font-size: 1.2rem;
+ font-weight: 400;
+ color: #d4af37;
+ margin-bottom: 16px;
+ letter-spacing: 1px;
+ }
+ .faq-item p {
+ color: #c4b5a0;
+ font-size: 0.95rem;
+ line-height: 2;
+ }
+ .contact-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(212, 175, 55, 0.1);
+ border: 1px solid rgba(212, 175, 55, 0.3);
+ padding: 12px 24px;
+ margin-top: 24px;
+ color: #d4af37;
+ text-decoration: none;
+ font-size: 1rem;
+ letter-spacing: 1px;
+ transition: all 0.3s ease;
+ }
+ .contact-badge:hover {
+ background: #d4af37;
+ color: #0a0a0a;
+ }
+ footer {
+ text-align: center;
+ padding: 60px 24px;
+ border-top: 1px solid rgba(212, 175, 55, 0.1);
+ color: #6b5d4f;
+ font-size: 0.85rem;
+ letter-spacing: 1px;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · sf-t3-1779642675702-261">
+  <meta property="og:description" content="sf-t3-1779642675702-261에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-261.maphoshirts.today/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="hero-content">
+ <h1>PBN 빌더의 세계</h1>
+ <p>마포의 한적한 작업실에서, 우리는 신작 애니메이션의 감동과 웹디자인의 정밀함을 하나로 엮어냅니다. <br>단순한 사이트가 아니라, 당신의 이야기가 숨쉬는 공간을 만드는 거죠.</p>
+ 
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0209.html">PBN 빌더로 알아보는 지수 성장 클리닉 정보</a>
+        <p class="post-item__summary">어느 날 아침, 정성스럽게 키워온 웹사이트의 지수가 급격히 하락하는 현상을 경험하면 당황하기 마련입니다. 이는 마치 건강한 머리카락이 소리 없이 빠져나가는 과정과 비슷하여 온라인상에서는 이를 비유적</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0232.html">PBN 빌더 활용 전략으로 확인하는 합정 노래방 추천정보 및 위치 접근성 가이드</a>
+        <p class="post-item__summary">디지털 마케팅의 PBN 빌더 도구들을 살펴보면 타겟 키워드를 효율적으로 관리하는 방식이 눈에 띕니다. 이와 마찬가지로 오프라인 장소를 선택할 때도 나만의 기준을 세우는 것이 중요합니다. 특히 합정 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0233.html">PBN 빌더로 분석한 연남 클럽 추천정보 초행자 주의사항과 필수 가이드</a>
+        <p class="post-item__summary">연남동의 화려한 밤을 처음 경험하려는 이들에게 PBN 빌더 기술처럼 체계적인 준비는 필수입니다. 지난 주말, 처음 방문한 친구가 입구에서 신분증을 챙기지 않아 곤란을 겪는 상황을 보며 초행자의 주의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0234.html">PBN 빌더가 알려주는 진실과 합정 셔츠룸 추천정보 및 최적의 시간 선택</a>
+        <p class="post-item__summary">흔히 셔츠룸에 대해 복잡한 예약이 필요하거나 밤늦은 시간에만 운영된다는 오해가 많습니다. 하지만 PBN 빌더를 통해 데이터를 분석하듯 업체의 운영 흐름을 파악하면 효율적인 이용이 가능합니다. 이 글</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0235.html">PBN 빌더 활용하는 공덕 가라오케 추천정보 및 인원 구성 팁</a>
+        <p class="post-item__summary">가라오케를 방문하기 전에는 만족스러운 시간을 보내기 위한 몇 가지 충족 조건이 있습니다. 단순히 공간만 빌리는 것이 아니라 방문 인원과 모임의 성격에 맞는 적절한 장소를 찾는 것이 무엇보다 중요합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0236.html">PBN 빌더 관점에서의 상수 마사지 추천정보와 업체 비교 기준</a>
+        <p class="post-item__summary">여러분은 일상 속에서 쌓인 피로를 풀기 위해 어떤 기준을 가지고 업체를 선정하고 계신가요? 매번 검색 엔진을 통해 비슷한 정보만 나열되는 상황에서 실질적인 혜택을 얻기는 생각보다 어렵습니다. PBN</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0237.html">PBN 빌더 절차로 보는 망원 노래방 추천정보 및 후기 신뢰도</a>
+        <p class="post-item__summary">성공적인 노래방 선택을 위해서는 일련의 체계적인 절차를 밟는 것이 중요합니다. 막연하게 검색어만 입력하기보다, 신뢰할 수 있는 데이터를 선별하는 과정을 거쳐야 실패 확률을 줄일 수 있습니다. PBN</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0238.html">PBN 빌더 활용 전략으로 알아보는 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">홍대 일대에서 장소를 결정할 때는 PBN 빌더가 웹사이트의 권위를 세우듯, 방문 목적에 맞는 최적의 장소를 선별하는 안목이 중요합니다. 젊음의 거리라는 상징성만큼이나 수많은 노래방이 밀집해 있어 각</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0239.html">PBN 빌더로 점검하는 공덕 셔츠룸 추천정보 및 예약 노하우</a>
+        <p class="post-item__summary">공덕 지역에서 새로운 모임 장소를 물색할 때 PBN 빌더가 구조를 설계하듯 사전에 예약 프로세스를 정립하는 것은 매우 중요한 작업입니다. 많은 이용자가 충분한 사전 조사 없이 방문했다가 원하는 환경</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0240.html">PBN 빌더 전략으로 보는 연남 유흥 추천정보와 위치 확인 리스트</a>
+        <p class="post-item__summary">연남에서 최적의 장소를 선택하는 과정은 PBN 빌더를 통해 안정적인 네트워크를 구축하는 것과 매우 흡사합니다. 방문하고자 하는 장소의 위치와 접근성을 우선순위에 두어야 동선이 꼬이지 않고 즐거운 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0241.html">PBN 빌더 활용 전략으로 알아보는 마곡 가라오케 추천정보 및 이용 팁</a>
+        <p class="post-item__summary">비즈니스 목적이나 지인과의 모임으로 낯선 지역을 방문할 때 검색 도구를 활용하는 것은 필수적이다. 마치 PBN 빌더가 웹사이트의 가시성을 높이는 체계적인 구조를 갖추는 것처럼, 마곡 지역의 유흥 공</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0242.html">PBN 빌더 시각에서 본 마곡 유흥 추천정보 확인 및 방문 시간 선정</a>
+        <p class="post-item__summary">흔히 유흥 문화는 무질서하고 불투명하다는 오해를 받곤 한다. 하지만 이는 정보를 제대로 선별하지 못했을 때 발생하는 편견일 뿐이며, PBN 빌더가 네트워크의 신뢰도를 관리하듯 마곡 지역의 유흥 산업</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1hnf3bw.html">마포에서 신작 애니메이션을 찾으며 허송세월하는 이들에게</a>
+        <p class="post-item__summary">요즘 마포 일대에서 새로 나오는 애니메이션들 훑어보는 게 유행이라지. 다들 예고편이나 화려한 색감에 눈이 멀어 정작 중요한 본질은 뒷전이더군. 내가 이 바닥에서 잔뼈가 굵은 사람이라 잘 아는데, 남</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

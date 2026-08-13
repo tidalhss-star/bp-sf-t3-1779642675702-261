@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-261</title>
+  <meta name="description" content="sf-t3-1779642675702-261에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-261.maphoshirts.today/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background: #0a0a0a;
+ color: #f5e6d3;
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ position: relative;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+ padding: 80px 24px;
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 4px;
+ background: linear-gradient(90deg, #d4af37, #f5e6d3, #d4af37);
+ }
+ .hero-content {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ .hero-content h1 {
+ font-size: 3.5rem;
+ font-weight: 300;
+ letter-spacing: 4px;
+ margin-bottom: 24px;
+ color: #d4af37;
+ text-shadow: 0 2px 20px rgba(212, 175, 55, 0.3);
+ }
+ .hero-content p {
+ font-size: 1.2rem;
+ color: #c4b5a0;
+ margin-bottom: 32px;
+ line-height: 2;
+ }
+ .hero-content a {
+ display: inline-block;
+ padding: 16px 48px;
+ border: 1px solid #d4af37;
+ color: #d4af37;
+ text-decoration: none;
+ letter-spacing: 3px;
+ font-size: 0.9rem;
+ transition: all 0.4s ease;
+ background: transparent;
+ }
+ .hero-content a:hover {
+ background: #d4af37;
+ color: #0a0a0a;
+ }
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 1000;
+ background: rgba(10, 10, 10, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+ }
+ .nav-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 16px 24px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .nav-links {
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+ .nav-links a {
+ color: #c4b5a0;
+ text-decoration: none;
+ font-size: 0.85rem;
+ letter-spacing: 2px;
+ transition: color 0.3s ease;
+ padding: 8px 0;
+ border-bottom: 1px solid transparent;
+ }
+ .nav-links a:hover {
+ color: #d4af37;
+ border-bottom-color: #d4af37;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 6px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background: #d4af37;
+ transition: all 0.3s ease;
+ }
+ .mobile-menu {
+ display: none;
+ position: fixed;
+ top: 70px;
+ left: 0;
+ right: 0;
+ background: rgba(10, 10, 10, 0.98);
+ backdrop-filter: blur(20px);
+ padding: 32px 24px;
+ flex-direction: column;
+ gap: 24px;
+ border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+ }
+ .mobile-menu a {
+ color: #c4b5a0;
+ text-decoration: none;
+ font-size: 1.1rem;
+ letter-spacing: 2px;
+ padding: 12px 0;
+ border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+ }
+ .mobile-menu a:hover {
+ color: #d4af37;
+ }
+ .mobile-menu.active {
+ display: flex;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hero-content h1 {
+ font-size: 2.2rem;
+ letter-spacing: 2px;
+ }
+ .hero-content p {
+ font-size: 1rem;
+ }
+ .container {
+ padding: 0 16px;
+ }
+ }
+ section {
+ padding: 100px 0;
+ }
+ .section-title {
+ font-size: 2.5rem;
+ font-weight: 300;
+ letter-spacing: 3px;
+ margin-bottom: 60px;
+ text-align: center;
+ color: #d4af37;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 48px;
+ margin-bottom: 80px;
+ }
+ @media (max-width: 768px) {
+ .info-grid {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ }
+ .info-card {
+ background: linear-gradient(145deg, #121212, #1a1a1a);
+ border: 1px solid rgba(212, 175, 55, 0.15);
+ padding: 48px 40px;
+ transition: all 0.4s ease;
+ }
+ .info-card:hover {
+ border-color: #d4af37;
+ transform: translateY(-4px);
+ box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+ }
+ .info-card h3 {
+ font-size: 1.6rem;
+ font-weight: 300;
+ letter-spacing: 2px;
+ margin-bottom: 24px;
+ color: #d4af37;
+ }
+ .info-card p {
+ color: #c4b5a0;
+ font-size: 1rem;
+ line-height: 2;
+ margin-bottom: 16px;
+ }
+ .info-card .highlight {
+ color: #d4af37;
+ font-weight: 500;
+ }
+ .faq-section {
+ max-width: 800px;
+ margin: 0 auto;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+ padding: 32px 0;
+ }
+ .faq-item h4 {
+ font-size: 1.2rem;
+ font-weight: 400;
+ color: #d4af37;
+ margin-bottom: 16px;
+ letter-spacing: 1px;
+ }
+ .faq-item p {
+ color: #c4b5a0;
+ font-size: 0.95rem;
+ line-height: 2;
+ }
+ .contact-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(212, 175, 55, 0.1);
+ border: 1px solid rgba(212, 175, 55, 0.3);
+ padding: 12px 24px;
+ margin-top: 24px;
+ color: #d4af37;
+ text-decoration: none;
+ font-size: 1rem;
+ letter-spacing: 1px;
+ transition: all 0.3s ease;
+ }
+ .contact-badge:hover {
+ background: #d4af37;
+ color: #0a0a0a;
+ }
+ footer {
+ text-align: center;
+ padding: 60px 24px;
+ border-top: 1px solid rgba(212, 175, 55, 0.1);
+ color: #6b5d4f;
+ font-size: 0.85rem;
+ letter-spacing: 1px;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-261">
+  <meta property="og:description" content="sf-t3-1779642675702-261에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-261.maphoshirts.today/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="hero-content">
+ <h1>PBN 빌더의 세계</h1>
+ <p>마포의 한적한 작업실에서, 우리는 신작 애니메이션의 감동과 웹디자인의 정밀함을 하나로 엮어냅니다. <br>단순한 사이트가 아니라, 당신의 이야기가 숨쉬는 공간을 만드는 거죠.</p>
+ 
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1516.html">마포 신작애니 스튜디오가 알아야 할 빌더 도구의 뼈대 구조</a>
+        <p class="post-item__summary">마포 근방에 자리 잡은 독립 애니메이션 스튜디오 치고는 드물게 시각이 독특하다. 붓 터치 연출부터 연출 기법까지, 아직 정체성을 잃지 않은 작업실이 몇 군데 남아 있다는 점 자체가 신기한 노릇이다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-273.html">마포 지역 신작 애니메이션 감상 환경과 운영 체제 최적화 방법</a>
+        <p class="post-item__summary">마포 인근에서 신작 애니메이션을 즐기기 위해서는 고화질 영상을 끊김 없이 재생할 수 있는 환경을 구축하는 것이 무엇보다 중요합니다. 최근 방영되는 고해상도 영상들은 데이터 용량이 크기 때문에 이를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0223.html">마포 지역 문화와 비즈니스 생활 가이드</a>
+        <p class="post-item__summary">마포는 서울에서 가장 역동적인 지역 중 하나로, 강변의 자연과 도시 문화가 어우러져 있습니다. 홍대 문화거리부터 염리 사색 거리까지 다양한 매력을 갖춘 이곳은 자영업자와 직장인들에게 새로운 기회의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0224.html">마포의 숨은 보석들, 지역 커뮤니티 공간 탐방</a>
+        <p class="post-item__summary">마포구는 서울의 중심부에 위치하면서도 독특한 지역적 특성을 간직하고 있는 곳입니다. 한강 공원부터 전통 시장, 그리고 최근 떠오르는 카페 거리까지 다양한 매력이 공존하는 이 지역은 많은 방문객과 주</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0225.html">마포에서 신작애니 알리기, PBN 빌더가 만든 차이</a>
+        <p class="post-item__summary">요즘 마포에서 신작애니를 준비하는 제작사들이 늘고 있다. 아무리 좋은 콘텐츠를 만들어도 검색 결과에서 발견되지 않으면 의미가 반감된다. 사이트 간 연결 구조를 검색 엔진에 맞게 정비하는 것이 첫걸음</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0226.html">마포에서 PBN 빌더로 신작애니 비즈니스 성장하기</a>
+        <p class="post-item__summary">마포 지역의 신작애니 제작사에게 PBN 빌더는 트래픽과 검색 노출을 끌어올리는 핵심 도구입니다. 이 시스템은 타겟 도메인을 자동으로 생성하고 콘텐츠를 최적화해 검색 엔진에 유리한 구조를 만들죠. 결</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0227.html">마포 지역 비즈니스 네트워크와 현지 상권 발전의 흐름</a>
+        <p class="post-item__summary">마포는 서울의 주요 상업 지구 중 하나로, 다양한 산업과 서비스가 밀집해 있습니다. 홍대입구역 주변의 문화 예술 거리부터 공덕역 인근의 오피스 지구까지, 지역 사업가들은 각자의 분야에서 혁신적인 비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0228.html">마포구의 다양한 소비문화와 지역 매력 재발견</a>
+        <p class="post-item__summary">마포구는 서울의 중심부에 위치하면서도 강변의 자연과 도시 문화가 조화를 이루는 지역입니다. 유명한 상권들이 밀집해 있으면서도 주택가와 공원이 잘 어우러져 있어, 일상과 여가의 균형을 찾는 주민들에게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0229.html">PBN 빌더로 신작애니 마케팅 전략 세우기</a>
+        <p class="post-item__summary">PBN 빌더는 여러 사이트를 효율적으로 운영하고자 할 때 필수적인 도구다. 특히 신작애니처럼 정기적인 콘텐츠 업데이트가 중요한 장르에서는 자동화된 포스팅과 사이트 관리가 성패를 가른다. 수동으로 블</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0230.html">PBN 빌더가 마포에서 선보이는 디지털 광고 전략</a>
+        <p class="post-item__summary">마포의 디지털 광고 시장은 빠르게 변하고 있다. 이곳에서 비즈니스는 체계적인 콘텐츠 배포를 통해 가시성을 높여야 한다. PBN 빌더는 현지 니즈에 맞춘 블로그 네트워크를 구축해 주는 도구다. 이 과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0231.html">마포 지역의 다양한 문화와 생활 편의시설 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 활기찬 지역으로, 한강변의 자연 경관과 현대식 상업 시설이 조화롭게 어우러져 있습니다. 이 지역은 오래된 골목길과 새로운 카페, 음식점들이 섞여 있어 방문객들에게 다양</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0232.html">마포 지역 사업장들이 온라인 가시성을 높이는 방법</a>
+        <p class="post-item__summary">마포는 서울에서 가장 활동적인 상업 지역 중 하나입니다. 이곳의 수많은 소상공인들과 중소 사업체들은 매일 고객 서비스에 집중하느라 정작 자신의 온라인 존재감을 관리하기 어려워합니다. 지역 경제가 번</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0233.html">신작애니 사이트 운영자라면 PBN 빌더를 고려해야 하는 이유</a>
+        <p class="post-item__summary">신작애니 정보 사이트는 최신 트렌드에 민감한 분야라 검색 노출 경쟁이 특히 치열하다. 마포 지역처럼 특정 지역을 염두에 둔 운영이라면 차별화 전략이 더 중요해진다. 단순히 콘텐츠를 업로드하는 방식만</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0234.html">마포에서 즐기는 다양한 엔터테인먼트 문화와 로컬 비즈니스 가이드</a>
+        <p class="post-item__summary">마포는 서울의 중심부에 위치한 활기찬 상권으로, 오래된 골목과 현대적인 건물이 어우러져 있습니다. 지역 주민과 방문객들이 찾는 다양한 음식점, 카페, 엔터테인먼트 시설이 밀집해 있어 휴가나 주말을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0235.html">마포에서 시작하는 PBN 빌더, 지역 SEO를 끌어올리는 방법</a>
+        <p class="post-item__summary">PBN 빌더는 작은 규모의 웹사이트를 모아 트래픽과 검색 엔진 노출을 극대화하는 전략이다. 마포 지역은 부동산과 카페 가게가 밀집해 있어, 지역 기반 SEO에 유리한 환경을 제공한다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0236.html">마포 지역 문화생활 가이드: 홍대와 합정의 매력</a>
+        <p class="post-item__summary">마포구는 서울의 대표적인 문화 지역으로, 홍대와 합정을 중심으로 다양한 엔터테인먼트와 식문화가 발달해 있습니다. 이 지역은 젊은 층과 직장인들이 자주 찾는 명소로, 주말과 평일 모두 활기찬 분위기를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0237.html">마포 지역 비즈니스 가이드: 회사 모임과 팀 빌딩 공간 선택 팁</a>
+        <p class="post-item__summary">마포는 서울의 중심에 위치한 역동적인 지역으로, 다양한 비즈니스와 식문화가 발달해 있습니다. 특히 회사 단체 행사나 팀 활동을 위한 공간 선택이 점점 중요해지면서, 마포 지역의 여러 시설들이 주목받</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0238.html">마포구에서 비즈니스 성장을 위한 실질적인 가이드</a>
+        <p class="post-item__summary">마포구는 서울의 주요 상업 지구 중 하나로, 많은 중소 기업과 스타트업들이 집중해 있는 지역입니다. 한강 인근의 접근성과 다양한 교통 수단이 갖춰져 있어 고객 유입이 활발합니다. 마포 지역에서 사업</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0207.html">성공적인 PBN 빌더 활용과 마포 럭셔리 단체 가라오케 예약 가이드 확인법</a>
+        <p class="post-item__summary">온라인 인프라를 구축할 때 PBN 빌더 도구를 활용하면 효율적인 정보 전달이 가능합니다. 하지만 많은 초보 사용자가 잘못된 전략으로 인해 노력을 헛되이 낭비하곤 합니다. 특히 콘텐츠 간의 연결성을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0208.html">PBN 빌더 활용하는 4</a>
+        <p class="post-item__summary">효율적인 디지털 마케팅 전략을 구축하기 위해 PBN 빌더를 체계적으로 학습하려는 수요가 늘고 있습니다. 특히 자동화 시스템의 근간을 이해하는 것이 중요하며, 학습 장소의 접근성은 교육의 지속 가능성</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
